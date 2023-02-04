@@ -8,8 +8,9 @@ const _ = require("lodash") ;
 
 // let blogArr = [] ;
 mongoose.set('strictQuery', false);
-mongoose.connect("mongodb://127.0.0.1:27017/BlogWebsite" );
-// mongoose.connect("mongodb://127.0.0.1:27017/BlogWesite" );
+mongoose.connect("mongodb+srv://admin-mayank:Test123@cluster0.71xkik8.mongodb.net/BlogWebsiteDB" );
+// mongoose.connect("mongodb://127.0.0.1:27017/BlogWebsite" );
+
 
 const app = express();
 
