@@ -1,12 +1,15 @@
 <%- include("partial/header") -%>
 
-    <h1>Home Page</h1>
-    <p> <%=  startingContent  %> </p>
+    <h1>Welcome to Our Blogs</h1>
+    <p>Discover a world of writing and reading like never before! Our blog reading and posting platform is designed to bring together a community of writers and readers from all around the world. Whether you are an avid reader or a passionate writer, our platform has something to offer you.
+    Explore a wide range of content, from personal stories and opinions to expert insights and advice. Connect with others who share your interests and discover new perspectives through reading and writing. Join our community today and start exploring the world of reading and writing like never before!
+    <strong><a>Join Now</a></strong></p>
+    
 
     <% blogArr.forEach((blog)=>{ %> 
        <h2> <%= blog.title  %> </h2>
             <p> <%= blog.content.substr(0,100) + '...'; %> 
-                <a href="/post/<%=blog.title%>"> Read More</a>
+                <a href="/post/<%=blog._id%>"> Read More</a>
             </p>
        
     <% }) %>
