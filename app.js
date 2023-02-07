@@ -5,10 +5,11 @@ const bodyParser = require("body-parser");
 const ejs = require("ejs");
 const mongoose = require("mongoose");
 const _ = require("lodash") ;
+require('dotenv').config();
 
 // let blogArr = [] ;
 mongoose.set('strictQuery', false);
-mongoose.connect("mongodb+srv://admin-mayank:Test123@cluster0.71xkik8.mongodb.net/BlogWebsiteDB" );
+mongoose.connect(process.env.DB_URI);
 // mongoose.connect("mongodb://127.0.0.1:27017/BlogWebsite" );
 
 
